@@ -1,4 +1,4 @@
-# Security Vans
+# Security Vans (unstable)
 
 This resource spawns multiple security vans on the map.    
 Players can rob the vans by destroying the backs doors with a **sticky bomb**.
