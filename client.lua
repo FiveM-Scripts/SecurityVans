@@ -180,12 +180,7 @@ Citizen.CreateThread(function()
   SetFarDrawVehicles(true)
   Citizen.Wait(10000)
   TriggerEvent("fs_core:notify", "CHAR_MARTIN", 4, 27, "Martin", "Security Vans Robbery", "Just to let you know you, there are some security vans driving around to rob")
-  TriggerEvent("fs_core:notify", "CHAR_MARTIN", 4, 20, "Martin", "Security Vans Robbery", "Destroy the back doors of all security vans")
-  Citizen.Wait(10000)
-  TriggerEvent("fs_core:notify", "CHAR_MARTIN", 4, 102, "Martin", "Security Vans Robbery", "Don't destory the security vans!")
-
-
-  --setup trucks
+    --setup trucks
   if NetworkIsHost() then
     for i=0, 6, 1 do
       spawnMoneyTruck(2000, i, true)
