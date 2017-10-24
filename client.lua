@@ -154,8 +154,8 @@ function checkMoneyTruckTick()
       --check to see the pickup has been collected
       if HasPickupBeenCollected(cashPickup[i]) then
         if i == 0 or i == 1  or i > 1 then
-          TriggerEvent("fs_core:displaytext", "You ~g~robbed~w~ the security van, ~y~escape~w~ the cops.", 10000)
-          TriggerServerEvent('fs_core:missionComplete', payOut)
+          TriggerEvent("fs_freemode:displaytext", "You ~g~robbed~w~ the security van, ~y~escape~w~ the cops.", 10000)
+          TriggerServerEvent('fs_freemode:missionComplete', payOut)
           --SetPlayerWantedLevel(GetPlayerPed(playerPed),3,0)
           Citizen.InvokeNative(0xEA386986E786A54F, Citizen.PointerValueIntInitialized(thisMoneyTruck))
           DeletePed(Citizen.PointerValueIntInitialized(thisMoneyTruckPed))
@@ -179,7 +179,7 @@ end
 Citizen.CreateThread(function()
   SetFarDrawVehicles(true)
   Citizen.Wait(10000)
-  TriggerEvent("fs_core:notify", "CHAR_MARTIN", 4, 27, "Martin", "Security Vans Robbery", "Just to let you know you, there are some security vans driving around to rob")
+  TriggerEvent("fs_freemode:notify", "CHAR_MARTIN", 4, 27, "Martin", "Security Vans Robbery", "Just to let you know you, there are some security vans driving around to rob")
     --setup trucks
   if NetworkIsHost() then
     for i=0, 6, 1 do
