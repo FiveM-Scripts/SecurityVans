@@ -5,7 +5,7 @@ Players can rob the vans by destroying the backs doors with a **sticky bomb**.
 
 ## Requirements
 - [Essential Mode](https://forum.fivem.net/t/release-essentialmode-base)
-- [FS Core](https://github.com/FiveM-Scripts/fs_core)
+- [fs_freemode](https://github.com/FiveM-Scripts/fs_freemode)
 
 ## Installation
 
