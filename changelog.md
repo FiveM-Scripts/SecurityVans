@@ -1,3 +1,8 @@
+# v1.0-alpha2 (02/03/2018)
+- Updated resource manifest version to `05cfa83c-a124-4cfa-a768-c24a5811d8f9`
+- Updated required dependencies.
+- Added version verification.
+
 # v1.0-alpha1 (20/08/2017)
 
 ## Features
